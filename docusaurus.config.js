@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: "Sonallux's knowledge base",
   tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://sonallux.github.io',
+  baseUrl: '/knowledge/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -35,7 +35,6 @@ const config = {
             ...args
           }) {
             const sidebarItems = await defaultSidebarItemsGenerator(args);
-            console.log(sidebarItems[1].items);
             return [
               ...sidebarItems,
               {

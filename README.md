@@ -1,3 +1,3 @@
-# knowledge
+# My knowledge base
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/facebook-docusaurus-26n656)
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/sonallux-knowledge)

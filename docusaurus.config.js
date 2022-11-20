@@ -4,6 +4,8 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const {sidebarItemsGenerator} = require('./sidebars');
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Sonallux's knowledge base",
@@ -30,28 +32,12 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          async sidebarItemsGenerator({
-            defaultSidebarItemsGenerator,
-            ...args
-          }) {
-            const sidebarItems = await defaultSidebarItemsGenerator(args);
-            return [
-              ...sidebarItems,
-              {
-                type: 'link',
-                label: 'All Tags',
-                href: '/docs/tags',
-              },
-            ];
-          },
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/sonallux/knowledge',
+          sidebarItemsGenerator,
+          editUrl: 'https://github.com/sonallux/knowledge/tree/main',
         },
         blog: {
           showReadingTime: true,
-          // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/sonallux/knowledge',
+          editUrl: 'https://github.com/sonallux/knowledge/tree/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -74,7 +60,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Articles',
           },
           { to: '/blog', label: 'Blog', position: 'left' },
           {
@@ -91,7 +77,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Articles',
                 to: '/docs/intro',
               },
             ],

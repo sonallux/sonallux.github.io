@@ -11,7 +11,7 @@ const config = {
   title: "Sonallux's knowledge base",
   tagline: 'Dinosaurs are cool',
   url: 'https://sonallux.github.io',
-  baseUrl: '/',
+  baseUrl: '/knowledge/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',

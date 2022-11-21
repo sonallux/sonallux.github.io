@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkknowledge=self.webpackChunkknowledge||[]).push([[2043],{3991:e=>{e.exports=JSON.parse('{"title":"Java","slug":"/category/java","permalink":"/docs/category/java","navigation":{"previous":{"title":"Intro","permalink":"/docs/intro"},"next":{"title":"Chaos Engineering","permalink":"/docs/java/chaos-engineering"}}}')}}]);

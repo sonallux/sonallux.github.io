@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkknowledge=self.webpackChunkknowledge||[]).push([[8183],{472:e=>{e.exports=JSON.parse('{"label":"database","permalink":"/docs/tags/database","allTagsPath":"/docs/tags","count":1,"items":[{"id":"eventual-consistency","title":"Eventual Consistency","description":"Eventually Consistent DDD (ECD3)","permalink":"/docs/eventual-consistency"}]}')}}]);

@@ -39,7 +39,7 @@
     ]
   },
   "engines": {
-    "node": ">=16.14"
+    "node": ">=18.10"
   },
   "description": "My knowledge base"
 }

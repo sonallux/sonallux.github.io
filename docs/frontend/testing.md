@@ -54,6 +54,19 @@ cy.get('...').should($button => {
 });
 ```
 
+### Custom Commands
+
+Custom commands (like `cy.testId('...')`) can be defined in a `e2e.ts` or `inex.ts` file under `src/e2e/support`:
+
+```ts
+declare namespace Cypress {
+  interface Chainable<Subject> {
+    testId(selector: string): Chainable<JQuery<HTMLElement>>;
+  }
+}
+
+Cypress.Commands.add('testId', (selector: string) => cy.get(`[data-testid=${selector}]`));
+```
 
 ## Testing Library
 - https://testing-library.com/docs/queries/about#priority

@@ -2,71 +2,13 @@
 tags: [frontend,testing]
 ---
 
-# Frontend testing
+# Testing
 
-- [Cypres](https://www.cypress.io)
-- [Playwright](https://playwright.dev)
-- [vitest](https://github.com/vitest-dev/vitest)
-
-## Cypres
-- Testing library query can be used with Cypres
-
-### `cy.<x>()` Functions
-
-Calls to `cy.<...>()` functions do not execute the action immediatly, instead the commands are added to some kind of queue. The commands are executed all together at the end of each test. The example below show this behaviour. When naivly looking at the code, one would expect that the example would work, but it actually does not work.
-
-Results are thenable, but they are not real promises. The following examples show this behaviour. 
-
-```ts
-it('error', () => {
-  let foo = true;
-
-  cy.visit('')
-  cy.get('...').should('contain.text', '...').then(() => foo = false)
-
-  if (foo) {
-    throw Error('Test 123')
-  }
-})
-```
-
-Waiting feature is applied not to the whole `cy.` chain, but to each function individually.
-
-### Assertions
-
-Cypress does not have its own assertion library. It uses Chai. [Assertions - Cypress Documentation](https://docs.cypress.io/guides/references/assertions)
-
-#### Implicit assertion
-
-```ts
-cy.get('...').should('have.text', 'Foo');
-```
-
-#### Explicit assertions
-
-Usefull for multiple assertions on the same element. The argument (here `$button`) is not the real DOM Element, instead it is a JQuery object, because Cypress uses JQuery internally. Therefore by convention the argument is prefixed with a `$`.
-
-```ts
-cy.get('...').should($button => {
-  expect($button).to.have.text('Holidays');
-  expect($button).to.have.class('mat-raised-button');
-  expect($button).to.have.attr('href', '/holidays');
-});
-```
-
-### Custom Commands
-
-Custom commands (like `cy.testId('...')`) can be defined in a `e2e.ts` or `inex.ts` file under `src/e2e/support`:
-
-```ts
-declare namespace Cypress {
-  interface Chainable<Subject> {
-    testId(selector: string): Chainable<JQuery<HTMLElement>>;
-  }
-}
-
-Cypress.Commands.add('testId', (selector: string) => cy.get(`[data-testid=${selector}]`));
-```
-
-## Testing Library
-- https://testing-library.com/docs/queries/about#priority
+- Unit Tests
+  - Jest
+  - Testing Library https://testing-library.com/docs/queries/about#priority
+- Integration/e2e Tests
+  - [Cypress](https://www.cypress.io)
+  - [Playwright](https://playwright.dev)
+- Other cool testing tools
+  - [vitest](https://github.com/vitest-dev/vitest)

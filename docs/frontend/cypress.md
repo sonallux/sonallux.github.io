@@ -6,7 +6,7 @@ tags: [frontend,testing]
 
 [www.cypress.io](https://www.cypress.io)
 
-- Selectors/Query from testing library can be used with Cypress
+- Selectors/Query from testing library can be used with Cypress with [@testing-library/cypress](https://testing-library.com/docs/cypress-testing-library/intro/)
 
 ## `cy.<x>()` Functions
 
@@ -64,3 +64,7 @@ declare namespace Cypress {
 
 Cypress.Commands.add('testId', (selector: string) => cy.get(`[data-testid=${selector}]`));
 ```
+
+## Component Tests
+
+Cypress recently added support for doing [component testing](https://docs.cypress.io/guides/component-testing/overview).

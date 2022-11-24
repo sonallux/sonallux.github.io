@@ -12,3 +12,9 @@ tags: [frontend,testing]
   - [Playwright](https://playwright.dev)
 - Other cool testing tools
   - [vitest](https://github.com/vitest-dev/vitest)
+
+
+## Mocking
+
+- `createMock(...)` from [@testing-library/angular/jest-utils](https://www.npmjs.com/package/@testing-library/angular)
+- `createSpyFromClass(...)` from [jest-auto-spies](https://www.npmjs.com/package/jest-auto-spies)

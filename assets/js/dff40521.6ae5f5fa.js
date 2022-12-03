@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkknowledge=self.webpackChunkknowledge||[]).push([[3291],{3562:e=>{e.exports=JSON.parse('{"label":"angular","permalink":"/knowledge/docs/tags/angular","allTagsPath":"/knowledge/docs/tags","count":1,"items":[{"id":"frontend/angular","title":"Angular","description":"Injection Functions","permalink":"/knowledge/docs/frontend/angular"}]}')}}]);

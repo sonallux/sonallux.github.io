@@ -25,4 +25,4 @@ tags: [frontend,testing]
   - `MockPipe(Pipe, value => JSON.stringify(value))` mock a pipe
   - ...
 - [Spectacular](https://www.npmjs.com/package/@ngworker/spectacular)
-- [Spectator](https://github.com/ngneat/spectator) ngneat have other [cool libraries](https://github.com/ngneat) for Angular and JS/TS too
+- [Spectator](https://github.com/ngneat/spectator) ngneat has other [cool libraries](https://github.com/ngneat) for Angular and JS/TS too

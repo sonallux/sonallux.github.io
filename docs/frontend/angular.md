@@ -11,29 +11,29 @@ Using the `inject()` Function seams to be the new way of doing DI in Angular. Th
 ```ts
 @Component(...)
 export class ComponentOld {
-    construtor(private httpClient: HttpClient) {}
+    constructor(private httpClient: HttpClient) {}
 }
 
 @Component(...)
 export class ComponentNew {
-    private httpClient = inject(HttpClient)
+  private httpClient = inject(HttpClient)
 }
 ```
 
 ### Benefits of this new approach
 #### Type safety
-Constructor injection with the `@Inject()` decorator does not have safety. But when using the `inject()` the type can be correctly infered:
+Constructor injection with the `@Inject()` decorator does not have type safety. But when using the `inject()` the type can be correctly inferred:
 ```ts
 const MyToken = new InjectionToken<number>('MyToken');
 
 @Component(...)
 class ComponentOld {
-  constructor(@Inject(MyToken) private value: string)
+  constructor(@Inject(MyToken) private value: string) // Compiler can not catch this type mismatch
 }
 
 @Component(...)
 class ComponentNew {
-  private value = inject(MyToken) // type number is correctly infered
+  private value = inject(MyToken) // type number is correctly inferred
 }
 ```
 

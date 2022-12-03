@@ -10,9 +10,9 @@ tags: [frontend,testing]
 
 ## `cy.<x>()` Functions
 
-Calls to `cy.<...>()` functions do not execute the action immediatly, instead the commands are added to some kind of queue. The commands are executed all together at the end of each test. The example below show this behaviour. When naivly looking at the code, one would expect that the example would work, but it actually does not work.
+Calls to `cy.<...>()` functions do not execute the action immediately, instead the commands are added to some kind of queue. The commands are executed all together at the end of each test. The example below show this behavior. When naively looking at the code, one would expect that the example would work, but it actually does not work.
 
-Results are thenable, but they are not real promises. The following examples show this behaviour. 
+Results are thenable, but they are not real promises. The following examples show this behavior. 
 
 ```ts
 it('error', () => {
@@ -27,7 +27,23 @@ it('error', () => {
 })
 ```
 
-Waiting feature is applied not to the whole `cy.` chain, but to each function individually.
+The automatic waiting for an element feature is applied to each function individually, but not to the whole `cy.` chain.
+
+```html
+<header>
+  <a href="/">Home</a>
+</header>
+<nav *ngIf="!loading">
+  <a href="/page1">Page One</a>
+</nav>
+```
+
+```ts
+it('Link to Page One is visible', () => {
+  cy.visit('')
+  cy.get('a').should('contain.text', 'PageOne')
+})
+```
 
 ## Assertions
 
@@ -41,7 +57,7 @@ cy.get('...').should('have.text', 'Foo');
 
 ### Explicit assertions
 
-Usefull for multiple assertions on the same element. The argument (here `$button`) is not the real DOM Element, instead it is a JQuery object, because Cypress uses JQuery internally. Therefore by convention the argument is prefixed with a `$`.
+Useful for multiple assertions on the same element. The argument (here `$button`) is not the real DOM Element, instead it is a JQuery object, because Cypress uses JQuery internally. Therefore by convention the argument is prefixed with a `$`.
 
 ```ts
 cy.get('...').should($button => {
@@ -53,7 +69,7 @@ cy.get('...').should($button => {
 
 ## Custom Commands
 
-Custom commands (like `cy.testId('...')`) can be defined in a `e2e.ts` or `inex.ts` file under `src/e2e/support`:
+Custom commands (like `cy.testId('...')`) can be defined in a `e2e.ts` or `index.ts` file under `src/e2e/support`:
 
 ```ts
 declare namespace Cypress {
@@ -67,4 +83,4 @@ Cypress.Commands.add('testId', (selector: string) => cy.get(`[data-testid=${sele
 
 ## Component Tests
 
-Cypress recently added support for doing [component testing](https://docs.cypress.io/guides/component-testing/overview).
+Cypress recently added support for [component testing](https://docs.cypress.io/guides/component-testing/overview).

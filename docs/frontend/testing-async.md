@@ -114,7 +114,7 @@ it('should test the incrementer', fakeAsync(() => {
 
 ## Testing Observables
 
-Pay attention whether an Observables emits synchronously or asynchronoulsy:
+Pay attention whether an Observables emits synchronously or asynchronously:
 
 ```ts
 it('should test with of()', () => {
@@ -126,7 +126,7 @@ it('should test with of()', () => {
 
 it('should test with Observable constructor', () => {
   let a = 1
-  new Observable<number>(subscriber => subscriber.next(1)) // still synchronous
+  new Observable<number>(subscriber => subscriber.next(1))
     .subscribe(n => a += n) // still synchronous
   expect(a).toBe(2)
 });
@@ -148,7 +148,7 @@ it('should assert in subscribe', fakeAsync( () => {
   let a = 1
   of(1).subscribe(n => {
     a += n
-    expect(a).toBe(1) // assertion error is caught by subscribe() and rethrown asynchronously
+    expect(a).toBe(1) // assertion error is caught by subscribe() and re-thrown asynchronously
   })
   expect(a).toBe(2)
 

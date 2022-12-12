@@ -1,5 +1,5 @@
 ---
-tags: [spring-boot, java]
+tags: [spring-data,database,spring-boot,java]
 ---
 
 # Spring Data

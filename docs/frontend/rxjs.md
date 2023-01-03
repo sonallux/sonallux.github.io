@@ -5,7 +5,7 @@ tags: [frontend,testing,rxjs,jest]
 # RxJS
 
 - [Interactive diagrams of Rx Observables and Operators](https://rxmarbles.com) - Unfortunately no longer maintained
-
+- [Video: Hot vs Cold Observable](https://www.youtube.com/watch?v=PF3mFOZn3MQ)
 
 ## Testing with marbles
 

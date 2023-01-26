@@ -69,7 +69,7 @@ it('should use Promise', async () => {
 
 ## With Angular testing utility functions
 
-´waitForAsync()´ waits for all async tasks to be completed even async tasks from other tests!
+`waitForAsync()` waits for all async tasks to be completed even async tasks from other tests!
 
 ```ts
 it('should use waitForAsync', waitForAsync(() => {

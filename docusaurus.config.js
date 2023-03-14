@@ -8,10 +8,10 @@ const {sidebarItemsGenerator} = require('./sidebars');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Sonallux's knowledge base",
+  title: "Sonallux's website",
   tagline: 'Dinosaurs are cool',
   url: 'https://sonallux.github.io',
-  baseUrl: '/knowledge/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -19,7 +19,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'sonallux', // Usually your GitHub org/user name.
-  projectName: 'knowledge', // Usually your repo name.
+  projectName: 'sonallux.github.io', // Usually your repo name.
 
   i18n: {
     defaultLocale: 'en',
@@ -33,11 +33,11 @@ const config = {
       ({
         docs: {
           sidebarItemsGenerator,
-          editUrl: 'https://github.com/sonallux/knowledge/tree/main',
+          editUrl: 'https://github.com/sonallux/sonallux.github.io/tree/main',
         },
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/sonallux/knowledge/tree/main',
+          editUrl: 'https://github.com/sonallux/sonallux.github.io/tree/main',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -50,7 +50,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Knowledge base',
+        title: "Sonallux's website",
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -64,7 +64,7 @@ const config = {
           },
           { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://github.com/sonallux/knowledge',
+            href: 'https://github.com/sonallux',
             label: 'GitHub',
             position: 'right',
           },
@@ -80,23 +80,27 @@ const config = {
                 label: 'Wiki',
                 to: '/docs/intro',
               },
+              {
+                label: 'Blog',
+                to: '/blog',
+              }
             ],
           },
           {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'GitHub Profile',
+                href: 'https://github.com/sonallux',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/sonallux/knowledge',
-              },
+                label: 'Website source code',
+                href: 'https://github.com/sonallux/sonallux.github.io',
+              }
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Sonallux's knowledge base. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Sonallux's website. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

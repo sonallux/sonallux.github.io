@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkknowledge=self.webpackChunkknowledge||[]).push([[9587],{1917:e=>{e.exports=JSON.parse('{"label":"openapi","permalink":"/knowledge/docs/tags/openapi","allTagsPath":"/knowledge/docs/tags","count":1,"items":[{"id":"openapi","title":"OpenAPI","description":"- Latest OpenAPI Specification","permalink":"/knowledge/docs/openapi"}]}')}}]);

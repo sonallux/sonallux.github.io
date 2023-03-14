@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkknowledge=self.webpackChunkknowledge||[]).push([[8779],{308:e=>{e.exports=JSON.parse('{"label":"liquibase","permalink":"/knowledge/docs/tags/liquibase","allTagsPath":"/knowledge/docs/tags","count":1,"items":[{"id":"java/liquibase","title":"Liquibase","description":"Rollback","permalink":"/knowledge/docs/java/liquibase"}]}')}}]);

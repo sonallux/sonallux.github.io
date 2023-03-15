@@ -1,0 +1,19 @@
+name: Combine PRs
+
+on:
+  schedule:
+    - cron: '0 4 * * *' # Wednesday at 01:00
+  workflow_dispatch:
+
+jobs:
+  combine-prs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: combine-prs
+        id: combine-prs
+        uses: github/combine-prs@v2
+        with:
+          github_token: ${{ secrets.PAT }}
+          branch_prefix: dependabot/npm_and_yarn/docusaurus
+          pr_title: Bump docusaurus

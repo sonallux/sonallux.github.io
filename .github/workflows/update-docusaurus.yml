@@ -27,9 +27,13 @@ jobs:
             var outdatedDeps = JSON.parse(child.stdout);
             var outdatedDocusaurusDeps = Object.keys(outdatedDeps)
               .filter(dep => dep.startsWith('@docusaurus/'))
-              .map(dep => ({name: dep, latest: dep.latest}))
+              .map(dep => ({name: dep, latest: outdatedDeps[dep].latest}))
 
-            console.log(JSON.stringify(outdatedDocusaurusDeps));
+            return outdatedDocusaurusDeps;
+       - name: Print latest version
+         if: ${{steps.latest-version.outputs.result.length > 0}}
+         run: echo "${{steps.latest-version.outputs.result}}"
+         
 #      - name: combine-p
 #        id: combine-prs
 #        uses: github/combine-prs@v2.0.3

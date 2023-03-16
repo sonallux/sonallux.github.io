@@ -1,0 +1,39 @@
+name: Update docusaurus dependencies
+
+on:
+  schedule:
+    - cron: '0 4 * * *' # every night at 04:00
+  workflow_dispatch:
+
+jobs:
+  update-docusaurus:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Find latest version
+        id: latest-version
+        uses: actions/github-script@v6
+        with:
+          script: |
+            var child_process = require('child_process');
+            var child = child_process.spawnSync("npm", ['outdated', '--json'], {encoding: 'utf-8'});
+            var outdatedDeps = JSON.parse(child.stdout);
+            var outdatedDocusaurusDeps = Object.keys(outdatedDeps)
+              .filter(dep => dep.startsWith('@docusaurus/'))
+              .map(dep => ({name: dep, latest: dep.latest}))
+
+            console.log(JSON.stringify(outdatedDocusaurusDeps));
+#      - name: combine-p
+#        id: combine-prs
+#        uses: github/combine-prs@v2.0.3
+#        with:
+#          github_token: ${{ secrets.PAT }}
+#          branch_prefix: dependabot/npm_and_yarn/docusaurus
+#          pr_title: Bump docusaurus

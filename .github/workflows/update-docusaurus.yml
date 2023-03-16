@@ -30,7 +30,7 @@ jobs:
               .map(dep => ({name: dep, latest: outdatedDeps[dep].latest}))
 
             return outdatedDocusaurusDeps;
-       - name: Print latest version
+      - name: Print latest version
          if: ${{steps.latest-version.outputs.result.length > 0}}
          run: echo "${{steps.latest-version.outputs.result}}"
          

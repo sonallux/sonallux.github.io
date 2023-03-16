@@ -33,6 +33,20 @@ jobs:
       - name: Print latest version
         if: steps.latest-version.outputs.result != '[]'
         run: echo "${{steps.latest-version.outputs.result}}"
+      - name: Update dependencies
+        if: steps.latest-version.outputs.result != '[]'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            var deps = JSON.parse('${{ steps.latest-version.outputs.result }}');
+            if (deps.length === 0) {
+              return;
+            }
+            var args = deps.map(dep => `${dep.name}@${dep.latest}`);
+            exec('npm', ['install', ...args]);
+      - name: Print result
+        if: steps.latest-version.outputs.result != '[]'
+        run: cat package.json
          
 #      - name: combine-p
 #        id: combine-prs

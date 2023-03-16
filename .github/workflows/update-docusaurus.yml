@@ -31,8 +31,8 @@ jobs:
 
             return outdatedDocusaurusDeps;
       - name: Print latest version
-         if: ${{steps.latest-version.outputs.result.length > 0}}
-         run: echo "${{steps.latest-version.outputs.result}}"
+        if: ${{steps.latest-version.outputs.result.length > 0}}
+        run: echo "${{steps.latest-version.outputs.result}}"
          
 #      - name: combine-p
 #        id: combine-prs

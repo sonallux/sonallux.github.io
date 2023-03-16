@@ -43,7 +43,7 @@ jobs:
               return;
             }
             var args = deps.map(dep => `${dep.name}@${dep.latest}`);
-            exec.exec('npm', ['install', ...args]);
+            exec.exec('npm', ['install', '--save-exact', ...args]);
       - name: Print result
         if: steps.latest-version.outputs.result != '[]'
         run: cat package.json

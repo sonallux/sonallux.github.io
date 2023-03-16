@@ -61,6 +61,7 @@ jobs:
           base: main
           author: 'sonallux <13821543+sonallux@users.noreply.github.com>'
           title: "Bump docusaurus dependencies"
+          labels: dependencies
           body: |
             Bump [docusaurus](https://github.com/facebook/docusaurus/releases) dependencies.
             
@@ -72,7 +73,7 @@ jobs:
         if: steps.cpr.outputs.pull-request-operation == 'created'
         uses: actions/github-script@v6
         with:
-          github-token: ${{secrets.PAT}}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             github.rest.issues.createComment({
               issue_number: ${{ steps.cpr.outputs.pull-request-number }},

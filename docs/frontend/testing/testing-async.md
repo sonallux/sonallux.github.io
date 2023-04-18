@@ -2,7 +2,7 @@
 tags: [frontend,testing,jest,rxjs]
 ---
 
-# Testing Asynchronous code with jest
+# Testing asynchronous code
 
 Assertion is performed in asynchronous code and therefore assertion errors are not visible to jest
 

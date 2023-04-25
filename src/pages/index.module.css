@@ -1,23 +1,68 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+  min-height: 600px;
+  background-image: url('/img/logo-500.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-origin: content-box;
+}
+
+[data-theme='dark'] .heroBanner {
+  background-image: url('/img/banner.png');
+  background-origin: border-box;
+}
+
+.heroContent {
+  padding-right: 500px;
+}
+
+@media screen and (max-width: 1439px) {
+  .heroBanner {
+    background-size: 350px 350px;
+    min-height: unset;
+  }
+
+  [data-theme='dark'] .heroBanner {
+    background-size: 450px 450px;
+  }
+
+  .heroContent {
+    padding-right: 400px;
+  }
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
+    background-image: url('/img/logo-200.png');
+    background-size: auto;
     padding: 2rem;
+  }
+
+  [data-theme='dark'] .heroBanner {
+    background-image: url('/img/logo-200.png');
+    background-origin: content-box;
+    background-size: auto;
+  }
+
+  .heroContent {
+    padding-right: 220px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heroBanner {
+    background-image: none;
+  }
+
+  [data-theme='dark'] .heroBanner {
+    background-image: none;
+  }
+
+  .heroContent {
+    padding-right: var(--ifm-spacing-horizontal);
   }
 }
 
 .buttons {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  gap: 8px
 }

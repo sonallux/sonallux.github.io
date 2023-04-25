@@ -9,15 +9,32 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={`hero hero--primary ${styles.heroBanner}`}>
-      <div className="container">
+    <header className={`hero ${styles.heroBanner}`}>
+      <div className={`container ${styles.heroContent}`}>
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p>
+          Welcome to my personal website! My name is Jonas, and I am a full-stack software engineer. With years of experience in both front-end and back-end development, I am capable of delivering high-quality, scalable software solutions. I'm also passionate about open source software and have contributed to several projects.
+        </p>
+        <p>
+          Please feel free to explore and don't hesitate to get in touch if you have any questions or inquiries. Thank you for visiting!
+        </p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className="button button--primary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Wiki
+          </Link>
+          <Link
+            className="button button--primary button--lg"
+            to="/blog">
+            Blog
+          </Link>
+          <Link
+            className="button button--primary button--lg"
+            to="https://github.com/sonallux"
+            >
+            GitHub Profile
           </Link>
         </div>
       </div>
@@ -32,9 +49,9 @@ export default function Home() {
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
-      <main>
+      {/*<main>
         <HomepageFeatures />
-      </main>
+      </main>*/}
     </Layout>
   );
 }

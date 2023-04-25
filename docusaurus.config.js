@@ -9,12 +9,12 @@ const {sidebarItemsGenerator} = require('./sidebars');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Sonallux's website",
-  tagline: 'Dinosaurs are cool',
+  tagline: "\"From front-end finesse to back-end brilliance, let a fullstack software engineer bring your digital dreams to life.\" - ChatGPT",
   url: 'https://sonallux.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo-200.png',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -53,7 +53,7 @@ const config = {
         title: "Sonallux's website",
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo-200.png',
         },
         items: [
           {
@@ -74,7 +74,7 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Pages',
             items: [
               {
                 label: 'Wiki',

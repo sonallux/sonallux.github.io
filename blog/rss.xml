@@ -13,8 +13,8 @@
             <link>https://sonallux.github.io/blog/hello-world</link>
             <guid>https://sonallux.github.io/blog/hello-world</guid>
             <pubDate>Sat, 03 Dec 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[I welcome everyone on my personal blog. As I am a Fullstack Software Engineer, the posts will be mainly about Software Development and related topics.]]></description>
-            <content:encoded><![CDATA[<p>I welcome everyone on my personal blog. As I am a Fullstack Software Engineer, the posts will be mainly about Software Development and related topics.</p><p>When there is no new blog post in the mean time, also have a look at <a href="/docs/intro">my Wiki</a>. It contains things that I often look up and notes about certain technologies and everything else that does not fit in a blog post. See it like a wikipedia for Fullstack Software Engineers.</p>]]></content:encoded>
+            <description><![CDATA[I welcome everyone on my personal blog. I am a Fullstack Software Engineer, so the posts will be mainly about Software Development and related topics.]]></description>
+            <content:encoded><![CDATA[<p>I welcome everyone on my personal blog. I am a Fullstack Software Engineer, so the posts will be mainly about Software Development and related topics.</p><p>When there is no new blog post in the mean time, also have a look at <a href="/docs/intro">my Wiki</a>. It contains things that I often look up and notes about certain technologies and everything else that does not fit in a blog post. See it like a wikipedia for Fullstack Software Engineers.</p>]]></content:encoded>
             <category>docusaurus</category>
         </item>
     </channel>

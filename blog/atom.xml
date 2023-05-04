@@ -2,11 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sonallux.github.io/blog</id>
     <title>Sonallux's website Blog</title>
-    <updated>2022-12-03T00:00:00.000Z</updated>
+    <updated>2023-05-04T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sonallux.github.io/blog"/>
     <subtitle>Sonallux's website Blog</subtitle>
     <icon>https://sonallux.github.io/img/logo-200.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Oh My Posh - A prompt theme engine for any shell]]></title>
+        <id>https://sonallux.github.io/blog/oh-my-posh</id>
+        <link href="https://sonallux.github.io/blog/oh-my-posh"/>
+        <updated>2023-05-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[If you are a Windows user and you use Powershell und WSL, then I can recommend Oh My Posh.]]></summary>
+        <content type="html"><![CDATA[<p>If you are a Windows user and you use Powershell und WSL, then I can recommend <a href="https://ohmyposh.dev" target="_blank" rel="noopener noreferrer">Oh My Posh</a>.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-oh-my-posh">What is "Oh My Posh"?<a href="#what-is-oh-my-posh" class="hash-link" aria-label="Direct link to What is &quot;Oh My Posh&quot;?" title="Direct link to What is &quot;Oh My Posh&quot;?">​</a></h2><p><a href="https://ohmyposh.dev" target="_blank" rel="noopener noreferrer">Oh My Posh</a> is a prompt theme engine written in Go. It supports most of the popular shells (Bash, Powershell, zsh, Fish, ...) and works cross platform on Windows, Linux and MacOS. Think of it like oh-my-zsh, but for all shells and platforms. Define your theme once and use it on any shell and any platform.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="why-do-i-use-it">Why do I use it?<a href="#why-do-i-use-it" class="hash-link" aria-label="Direct link to Why do I use it?" title="Direct link to Why do I use it?">​</a></h2><p>Because I am using Powershell on Windows and Bash on Linux I hat two completely different setups before knowing about Oh My Posh. With Powershell I used <a href="https://github.com/dahlbyk/posh-git" target="_blank" rel="noopener noreferrer">posh-git</a> and with Bash I used <a href="https://github.com/magicmonty/bash-git-prompt" target="_blank" rel="noopener noreferrer">bash-git-prompt</a>. This setup worked, but it was tidious to maintain and update.</p><p>After I found Oh My Posh my setup is much simplier. I have defined <a href="https://github.com/sonallux/oh-my-posh-theme" target="_blank" rel="noopener noreferrer">my own custom theme</a> once and can reuse it everywhere.</p><p><img loading="lazy" alt="sonallux Oh My Posh theme" src="/assets/images/oh-my-posh-theme-d2ecc8aca79c87686c3c02686b15cb30.png" width="1737" height="532" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>Jonas</name>
+            <uri>https://github.com/sonallux</uri>
+        </author>
+        <category label="oh-my-posh" term="oh-my-posh"/>
+        <category label="shell" term="shell"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello World]]></title>
         <id>https://sonallux.github.io/blog/hello-world</id>

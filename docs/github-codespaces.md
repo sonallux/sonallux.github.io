@@ -12,16 +12,15 @@ With GitHub Codespaces you can run your development environment fully managed in
 
 ```json
 {
-	"name": "Node.js",
-    "image": "mcr.microsoft.com/devcontainers/base:debian",
-
-	"features": {
-		"ghcr.io/devcontainers/features/node:1": {"version": "18"}
-	},
-
-	"forwardPorts": [3000],
-
-	"postCreateCommand": "npm install"
+  "name": "Node.js",
+  "image": "mcr.microsoft.com/devcontainers/base:debian",
+  
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {"version": "18"}
+  },
+  
+  "forwardPorts": [3000], 
+  "postCreateCommand": "npm install"
 }
 ```
 
@@ -53,9 +52,11 @@ Setup instructions (mainly taken from the [Github Docs](https://docs.github.com/
 
 The codespace you connect to must be running an SSH server. The default container image includes an SSH server, which is started automatically. If your codespaces are not created from the default image, you can install and start an SSH server by adding the following to the `features` object in your `devcontainer.json` file:
 
-```jsonc
-"features": {
+```json
+{
+  "features": {
     "ghcr.io/devcontainers/features/sshd:1": {}
+  }
 }
 ```
 

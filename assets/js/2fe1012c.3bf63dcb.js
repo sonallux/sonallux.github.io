@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksonallux_github_io=self.webpackChunksonallux_github_io||[]).push([[7075],{3092:e=>{e.exports=JSON.parse('{"label":"openapi","permalink":"/docs/tags/openapi","allTagsPath":"/docs/tags","count":1,"items":[{"id":"openapi","title":"OpenAPI","description":"- Latest OpenAPI Specification","permalink":"/docs/openapi"}]}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksonallux_github_io=self.webpackChunksonallux_github_io||[]).push([[9767],{6104:a=>{a.exports=JSON.parse('{"label":"angular","permalink":"/docs/tags/angular","allTagsPath":"/docs/tags","count":1,"items":[{"id":"frontend/angular","title":"Angular","description":"Injection Functions","permalink":"/docs/frontend/angular"}],"unlisted":false}')}}]);

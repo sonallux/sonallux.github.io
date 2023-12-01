@@ -23,6 +23,8 @@ class Service {
 
 ## NGRX SignalStore
 
+[EnterJS Angular Day Presentation from Manfred Steyer](https://www.angulararchitects.io/en/presentations/angular-architectures-with-signals-5)
+
 Standalone Store from the NGRX team built completely on top of Signals. It is lightweight and independent form the well known NGRX Store based on the Redux pattern.
 Install using `npm i @ngrx/signals`.
 

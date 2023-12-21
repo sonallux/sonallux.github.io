@@ -4,7 +4,7 @@ tags: [frontend,angular]
 
 # Signals
 
-Since Angular 17 Signals are production ready. Only the `effect` function is still under developer preview
+Since Angular 17 Signals are production ready. Only the `effect` function is still under developer preview.
 
 Signals can be used everywhere in Angular. 
 
@@ -20,6 +20,10 @@ class Service {
   public readonly to = computed(() => this.state().to);
 }
 ```
+
+In depth Angular Signals Video: https://www.youtube.com/watch?v=sbIlz-yuxQI
+
+Signals have an effect on change detection in Angular. Refer to the dedicated section about [change detection](change-detection) to learn more about this.
 
 ## NGRX SignalStore
 

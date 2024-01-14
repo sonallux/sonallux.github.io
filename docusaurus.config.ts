@@ -3,8 +3,10 @@ import type * as Preset from '@docusaurus/preset-classic';
 import {themes} from 'prism-react-renderer';
 import {sidebarItemsGenerator} from './sidebars';
 
+const title = "Sonallux"
+
 const config: Config = {
-  title: "Sonallux's website",
+  title,
   tagline: "\"From front-end finesse to back-end brilliance, let a fullstack software engineer bring your digital dreams to life.\" - ChatGPT",
   url: 'https://sonallux.github.io',
   baseUrl: '/',
@@ -43,9 +45,9 @@ const config: Config = {
 
   themeConfig: {
     navbar: {
-      title: "Sonallux's website",
+      title,
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Sonallux Logo',
         src: 'img/logo-200.png',
       },
       items: [
@@ -97,7 +99,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Sonallux's website. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Sonallux. Built with <a href="https://docusaurus.io" target="_blank">Docusaurus.</a>`,
     },
     prism: {
       theme: themes.github,

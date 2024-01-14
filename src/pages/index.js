@@ -29,12 +29,6 @@ function HomepageHeader() {
             to="/blog">
             Blog
           </Link>
-          <Link
-            className="button button--primary button--lg"
-            to="https://github.com/sonallux"
-            >
-            GitHub Profile
-          </Link>
         </div>
       </div>
     </header>

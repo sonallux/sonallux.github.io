@@ -87,6 +87,10 @@ const config: Config = {
               href: 'https://github.com/sonallux',
             },
             {
+              label: 'X Profile',
+              href: 'https://twitter.com/sonallux',
+            },
+            {
               label: 'Website source code',
               href: 'https://github.com/sonallux/sonallux.github.io',
             }

@@ -53,7 +53,7 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="why-do-i-use-it">Why do I use it?<a href="https://sonallux.github.io/blog/oh-my-posh#why-do-i-use-it" class="hash-link" aria-label="Direct link to Why do I use it?" title="Direct link to Why do I use it?">​</a></h2>
 <p>Because I am using Powershell on Windows and Bash on Linux I hat two completely different setups before knowing about Oh My Posh. With Powershell I used <a href="https://github.com/dahlbyk/posh-git" target="_blank" rel="noopener noreferrer">posh-git</a> and with Bash I used <a href="https://github.com/magicmonty/bash-git-prompt" target="_blank" rel="noopener noreferrer">bash-git-prompt</a>. This setup worked, but it was tidious to maintain and update.</p>
 <p>After I found Oh My Posh my setup is much simplier. I have defined <a href="https://github.com/sonallux/oh-my-posh-theme" target="_blank" rel="noopener noreferrer">my own custom theme</a> once and can reuse it everywhere.</p>
-<p><img loading="lazy" alt="sonallux Oh My Posh theme" src="https://sonallux.github.io/assets/images/oh-my-posh-theme-d2ecc8aca79c87686c3c02686b15cb30.png" width="1737" height="532" class="img_ev3q"></p>]]></content>
+<p><img decoding="async" loading="lazy" alt="sonallux Oh My Posh theme" src="https://sonallux.github.io/assets/images/oh-my-posh-theme-d2ecc8aca79c87686c3c02686b15cb30.png" width="1737" height="532" class="img_ev3q"></p>]]></content>
         <author>
             <name>Jonas</name>
             <uri>https://github.com/sonallux</uri>

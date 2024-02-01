@@ -25,6 +25,15 @@ In depth Angular Signals Video: https://www.youtube.com/watch?v=sbIlz-yuxQI
 
 Signals have an effect on change detection in Angular. Refer to the dedicated section about [change detection](change-detection) to learn more about this.
 
+- [Blog Post "Signals are VALUES, not EVENTS"](https://dev.to/ducin/signals-are-values-not-events-10bn) by Tomasz Ducin
+
+## Signal Inputs
+
+Since Angular 17.1 inputs can be signals, so components can react easily to input changes.
+
+- https://justangular.com/blog/signal-inputs-are-here-to-change-the-game?s=09
+- https://angularexperts.io/blog/angular-signal-inputs
+
 ## NGRX SignalStore
 
 [EnterJS Angular Day Presentation from Manfred Steyer](https://www.angulararchitects.io/en/presentations/angular-architectures-with-signals-5)

@@ -7,6 +7,7 @@ tags: [frontend,microfrontend]
 - Shell App is required, apps must conform to some rules from shell, so they can be integrated in to shell
 - WJAX 2023 - [Manfred Steyer: Microfrontends with Modern Angular](https://www.angulararchitects.io/en/presentations/micro-frontends-with-modern-angular-3/)
 - [Microfrontends using Import Maps - Blog Post from Manfred Steyer](https://www.angulararchitects.io/en/blog/import-maps-the-next-evolution-step-for-micro-frontends-article/)
+- Free E-Book [Enterprise Angular: Micro Frontends and Moduliths with Angular](https://www.angulararchitects.io/en/ebooks/micro-frontends-and-moduliths-with-angular/) from Manfred Steyer
 
 ## module federation
   - `requiredVersion: 'auto'` not good, because even minor/patch differences cause problems

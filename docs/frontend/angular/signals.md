@@ -21,7 +21,7 @@ class Service {
 }
 ```
 
-In depth Angular Signals Video: https://www.youtube.com/watch?v=sbIlz-yuxQI
+In depth [Angular Signals Video "In-depth Angular Signals, mental models for reactive graph, push / pull, laziness and more! 🚥"](https://www.youtube.com/watch?v=sbIlz-yuxQI) by Tomas Trajan.
 
 Signals have an effect on change detection in Angular. Refer to the dedicated section about [change detection](change-detection) to learn more about this.
 
@@ -31,8 +31,8 @@ Signals have an effect on change detection in Angular. Refer to the dedicated se
 
 Since Angular 17.1 inputs can be signals, so components can react easily to input changes.
 
-- https://justangular.com/blog/signal-inputs-are-here-to-change-the-game?s=09
-- https://angularexperts.io/blog/angular-signal-inputs
+- [Blog Post "Angular Signal Inputs are here to change the game 🎲"](https://justangular.com/blog/signal-inputs-are-here-to-change-the-game?s=09) by Enea
+- [Blog Post "Angular Signal Inputs"](https://angularexperts.io/blog/angular-signal-inputs) by Kevin Kreuzer
 
 ## NGRX SignalStore
 

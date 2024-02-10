@@ -47,3 +47,7 @@ Install using `npm i @ngrx/signals`.
 ## Debugging Signals
 
 The Angular Team is planning to add debugging capabilities for signals into the Angular Dev Tools.
+
+## Signal Forms
+
+Because there is currently no support for signals in Forms, the community created `ng-signal-forms`. [This Blog Post](https://timdeschryver.dev/blog/bringing-the-power-of-signals-to-angular-forms-with-signal-forms?tldr=1) is a nice introduction into this library.

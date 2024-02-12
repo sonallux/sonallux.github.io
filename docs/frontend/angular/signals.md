@@ -33,6 +33,7 @@ Since Angular 17.1 inputs can be signals, so components can react easily to inpu
 
 - [Blog Post "Angular Signal Inputs are here to change the game 🎲"](https://justangular.com/blog/signal-inputs-are-here-to-change-the-game?s=09) by Enea
 - [Blog Post "Angular Signal Inputs"](https://angularexperts.io/blog/angular-signal-inputs) by Kevin Kreuzer
+- [Blog Post: Component Communication with Signals](https://www.angulararchitects.io/en/blog/component-communication-with-signals-inputs-two-way-bindings-and-content-view-queries) by Manfred Steyer
 
 ## NGRX SignalStore
 

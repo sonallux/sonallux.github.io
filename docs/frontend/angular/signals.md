@@ -122,7 +122,7 @@ Model signals are exposed as input/output pair to be used by the parent componen
   `
 })
 export class CustomCheckbox {
-  protected checked = model(false);
+  checked = model(false); // returns ModelSignal<number>
 
   toggle() {
     this.checked.set(!this.checked());
@@ -131,6 +131,30 @@ export class CustomCheckbox {
 ```
 
 - Blog Post [Model Inputs: Reactive Two-Way Binding](https://itnext.io/model-inputs-reactive-two-way-binding-29a40c7626f2)
+
+### `output()` function - developer preview since 17.3
+
+`output()` allows you to define our components output similar to `input()`.
+
+```ts
+@Component({
+  selector: 'custom-checkbox',
+  template: `
+    <div class="cool-checkbox-treatment">
+      <input type="checkbox" (click)="checkedChange.emit(!checked())" [value]="checked()">
+    </div>
+  `
+})
+export class CustomCheckbox {
+  checked = input(false);
+  checkedChange = output<boolean>(); // returns OutputEmitterRef<boolean>
+
+  private nameChange$ = new Subject<string>(); // any observable
+  nameChange = outputFromObservable(this.nameChange$); // returns OutputEmitterRef<string>
+  
+  checkedChangeEvents = outputToObservable(this.checkedChange); // returns Observable<boolean>
+}
+```
 
 ## NGRX SignalStore
 

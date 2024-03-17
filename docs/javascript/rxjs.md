@@ -1,5 +1,5 @@
 ---
-tags: [frontend,testing,rxjs,jest]
+tags: [javascript,testing,rxjs,jest]
 ---
 
 # RxJS

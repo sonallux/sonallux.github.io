@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksonallux_github_io=self.webpackChunksonallux_github_io||[]).push([[4874],{1910:a=>{a.exports=JSON.parse('{"title":"Java","slug":"/category/java","permalink":"/docs/category/java","navigation":{"previous":{"title":"Intro","permalink":"/docs/intro"},"next":{"title":"Chaos Engineering","permalink":"/docs/java/chaos-engineering"}}}')}}]);

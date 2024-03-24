@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksonallux_github_io=self.webpackChunksonallux_github_io||[]).push([[903],{6760:s=>{s.exports=JSON.parse('{"label":"testcontainers","permalink":"/blog/tags/testcontainers","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

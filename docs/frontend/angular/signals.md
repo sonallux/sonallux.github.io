@@ -156,6 +156,8 @@ export class CustomCheckbox {
 }
 ```
 
+- Angular Blog Post [Meet Angular’s new output() API](https://blog.angular.io/meet-angulars-new-output-api-253a41ffa13c) by Paul Gschwendtner
+
 ## NGRX SignalStore
 
 [EnterJS Angular Day Presentation from Manfred Steyer](https://www.angulararchitects.io/en/presentations/angular-architectures-with-signals-5)

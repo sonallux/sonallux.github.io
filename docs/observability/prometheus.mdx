@@ -1,0 +1,41 @@
+---
+tags: [observability]
+sidebar_position: 4
+---
+
+import CounterRate from '@site/src/components/counter-rate';
+
+# Prometheus
+
+[Prometheus](https://prometheus.io) is a time series database that is often used to store [Metrics](./metrics). It also offers the powerful query language PromQL to query and aggregate time series data.
+
+## Metric types
+
+Prometheus uses has four main metric types
+- [Gauge](https://youtube.com/watch?v=fhx0ehppMGM&t=25s)
+- [Counter](https://youtube.com/watch?v=fhx0ehppMGM&t=138s)
+- [Summaries](https://youtube.com/watch?v=fhx0ehppMGM&t=293s) measure a distribution using percentile or quantiles. Do not average or aggregate quantiles from multiple service instances or other label dimensions because there is just no statistically valid way to average over percentile. If aggregation of percentiles is needed use Histograms instead.
+- [Histograms](https://youtube.com/watch?v=fhx0ehppMGM&t=405s) can also track a distribution, but instead of outputting quantiles they count the input value into a set of ranged buckets to measure how many values are observed for each range bucket. In Prometheus the histograms are cumulative so each bucket also contains the count of the previous lower-ranged buckets.
+
+## PromQL
+
+## Counter rates and increases
+
+Prometheus offers three methods for calculating the rate of increase for a counter metric: `rate()`, `irate()` and `increase()`. They all take a range vector full of counter time series as input and return the counters rate of increase under that window. They all require that at least two samples are present in the provided time window. The content of this section is mainly taken from [this nice YouTube Video](https://youtube.com/watch?v=7uy_yovtyqw).
+
+### `rate()`
+
+Computes a per second rate of increase that is smoothed or averaged over the entire input range window.
+
+### `increase()`
+
+Behaves like the `rate()` function except that it returns an absolute value increase over the provided window instead of a per second value.
+Note that `increase()` is not very well suited for counters that increase slowly.
+
+### `irate()`
+
+Computes a much faster reacting instantaneous rate by only considering the last two samples under the provided window. Therefore `irate()` will produce very spiky graphs and is only suited for super zoomed-in graphs where you want to see immediate changes in your system behaviour.
+
+## Playground
+
+<CounterRate></CounterRate>

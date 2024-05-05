@@ -1,0 +1,16 @@
+.counterRate {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.rawTimeSeriesInput{
+  width: 100%;
+}

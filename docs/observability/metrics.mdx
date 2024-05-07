@@ -1,0 +1,60 @@
+---
+tags: [observability]
+sidebar_position: 1
+---
+
+import {Chart} from 'react-chartjs-2'
+import 'chart.js/auto';
+
+# Metrics
+
+Metric are measurement over the time, where for each measurement the measured value, the current timestamp and optional metadata are collected. Those measurement typically are not for one specific request or task. Instead they provide statistical information about the whole system, all requests/tasks or a specific type of requests. Typical metrics are:
+
+- Total number of bytes read/received/sent
+- Current CPU/Memory usage
+- Average duration of something
+- Number of occurred errors
+
+Metrics are typically stored in time series databases.
+
+## Metric types
+
+One often distinguished the following metric types counter, gauge and histogram.
+
+### Counter
+
+A counter measures a value which can only increase. Often just one exception to this rule is allowed: Resetting the counter to zero when the system restarts. With this exception the instrumentation must not store the counter in a place which survives restarts. Therefore, the absolute value of the counter is often not very useful and instead one often want to know how fast the counter has gone up over some defined recent time window.
+
+For example the total number of requests can be modelled as counters. From this metric one can easily calculate the requests per time range.
+
+<Chart type='line'
+  data={{
+    labels: ['10:00', '10:01', '10:02', '10:03', '10:04', '10:05', '10:06', '10:07', '10:08', '10:09'],
+    datasets: [{
+      label: 'Example counter',
+      data: [0, 0, 1, 2, 2, 4, 5, 0, 1, 3],
+      borderWidth: 1
+    }]
+  }}
+></Chart>
+
+### Gauge
+
+A gauge just measures a numeric value.
+
+For example the current CPU-Usage can be modelled as gauge.
+
+<Chart type='line'
+  data={{
+    labels: ['10:00', '10:01', '10:02', '10:03', '10:04', '10:05', '10:06', '10:07'],
+    datasets: [{
+      label: 'Example gauge',
+      data: [0.1, 0.2, 0.8, 0.7, 0.9, 0.4, 0.2, 0.4],
+      borderWidth: 1
+    }]
+  }}
+></Chart>
+
+### Histogram
+
+A Histogram is a client side aggregation of values. It is well suited to collect the distribution of values, such as request latencies.

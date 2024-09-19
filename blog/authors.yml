@@ -3,3 +3,7 @@ sonallux:
   title: Fullstack Software Engineer
   url: https://github.com/sonallux
   image_url: https://github.com/sonallux.png
+  page: true
+  socials:
+    x: sonallux
+    github: sonallux

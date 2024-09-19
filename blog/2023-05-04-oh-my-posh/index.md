@@ -7,7 +7,7 @@ tags: [oh-my-posh, shell]
 
 If you are a Windows user and you use Powershell und WSL, then I can recommend [Oh My Posh](https://ohmyposh.dev).
 
-<!--truncate-->
+<!-- truncate -->
 
 ## What is "Oh My Posh"?
 

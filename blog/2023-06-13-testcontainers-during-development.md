@@ -7,7 +7,7 @@ tags: [testcontainers, spring-boot]
 
 [Testcontainers](https://testcontainers.com) is a great technology for setting up a test environment using container technology. With the latest Spring Boot 3.1 release it is also possible to use Testcontainers during development, for example when you run your application locally. In this post I will show you how to set this up.
 
-<!--truncate-->
+<!-- truncate -->
 
 ## Adding dependencies
 

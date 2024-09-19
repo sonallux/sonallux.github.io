@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksonallux_github_io=self.webpackChunksonallux_github_io||[]).push([[8947],{6600:l=>{l.exports=JSON.parse('{"authors":[{"name":"Jonas","title":"Fullstack Software Engineer","url":"https://github.com/sonallux","imageURL":"https://github.com/sonallux.png","key":"sonallux","page":null,"count":3}]}')}}]);

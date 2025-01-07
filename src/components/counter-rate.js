@@ -114,7 +114,7 @@ export default function CounterRate({}) {
       </div>
 
       <div className={styles.row}>
-        <button className={'button button--primary'} onClick={e => setShowFixedCounterResets(!showFixedCounterResets)}>Toggle fixed counter</button>
+        <button className={'button button--primary'} onClick={() => setShowFixedCounterResets(!showFixedCounterResets)}>Toggle fixed counter</button>
         <button className={'button button--primary'} onClick={showRate}>Show rate()</button>
         <button className={'button button--primary'} onClick={showIncrease}>Show increase()</button>
         <button className={'button button--primary'} onClick={showIrate}>Show irate()</button>

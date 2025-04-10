@@ -1,5 +1,5 @@
 ---
-tags: [javascript,testing,rxjs,jest]
+tags: [javascript, testing, rxjs, jest, reactive]
 ---
 
 # RxJS

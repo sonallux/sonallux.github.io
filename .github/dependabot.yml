@@ -16,6 +16,10 @@ updates:
           - "chart.js"
           - "chartjs-plugin-annotation"
           - "react-chartjs-2"
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
   - package-ecosystem: github-actions
     directory: '/'
     schedule:

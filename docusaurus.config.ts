@@ -11,7 +11,6 @@ const config: Config = {
   url: 'https://sonallux.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo-200.png',
 
   // GitHub pages deployment config.

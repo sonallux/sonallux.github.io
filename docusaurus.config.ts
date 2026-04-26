@@ -18,6 +18,10 @@ const config: Config = {
   organizationName: 'sonallux', // Usually your GitHub org/user name.
   projectName: 'sonallux.github.io', // Usually your repo name.
 
+  future: {
+    v4: true
+  },
+
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],

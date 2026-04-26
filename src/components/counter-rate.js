@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
-import "chart.js/auto";
-import {Chart} from 'chart.js'
+import Chart from "chart.js/auto";
 import annotationPlugin from 'chartjs-plugin-annotation'
 import {Scatter} from 'react-chartjs-2';
 

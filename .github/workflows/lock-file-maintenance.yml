@@ -1,0 +1,35 @@
+name: Lock File Maintenance
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * 5'
+
+jobs:
+  update-lock-file:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Recreate lock file
+        run: |
+          rm -f package-lock.json
+          npm install
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v8
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'chore: update package-lock.json'
+          title: 'chore: update package-lock.json'
+          body: |
+            This PR updates `package-lock.json` by recreating it with `npm install`.
+          branch: chore/update-package-lock
+          delete-branch: true
+          add-paths: |
+            package-lock.json
